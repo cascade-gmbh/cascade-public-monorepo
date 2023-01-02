@@ -1,4 +1,4 @@
-name: multiplatform-build
+name: build
 
 on:
   workflow_call:          # workflow is reusable
