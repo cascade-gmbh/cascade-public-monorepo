@@ -1,5 +1,4 @@
-# cpp-23-project-templates
-C++23 cross-platform project template examples
+# C++23 Big Cross-Platform Project Example
 
 Tooling:
 CMake, Conan, Coverity, Cppcheck, clang-format, clang-tidy, 
@@ -21,12 +20,11 @@ OS:
   WebAssembly latest
 
 app
-  hello-world-cli
-  hello-world-gui
-  complete-examples-gui
+  dsl-generator-cli
+  example-gui
 lib
-  static-library
-  dynamic-library
+  example-static-library
+  example-dynamic-library
 ext
   asio
   sdl
