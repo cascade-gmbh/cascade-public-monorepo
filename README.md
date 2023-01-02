@@ -1,6 +1,6 @@
-# C++23 Big Cross-Platform Project Example
+# C++23 With Embedded Python Cross-Platform Project Example
 
-including GitHub workflow jobs for building, testing and deployment.
+including complete GitHub workflow jobs for building, testing and deployment.
 
 **Tools**:  
   - CMake, Conan
@@ -17,8 +17,8 @@ including GitHub workflow jobs for building, testing and deployment.
 **Libraries**: 
   - asio, sdl, opencv, zlib, botan, named_type, pybind11
 
-**Embedded Python**:
-  - matplotlib, pandas, numpy
+**Python Packages**:
+  - numpy, pandas, matplotlib, seaborn
 
 ## Directory Structure
 
