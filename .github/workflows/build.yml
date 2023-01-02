@@ -30,7 +30,7 @@ jobs:
       - name: update git submodules
         run: |
           git submodule update --init --recursive
-          ls -Rd
+          ls -R
           
       - name: build DSL scanner/parser
         run: |
