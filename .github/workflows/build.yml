@@ -19,14 +19,20 @@ jobs:
           - macos-12
           
     steps:
+    
       - uses: actions/checkout@v3
         with:
           submodules: recursive
-      
-      - name: install python
-        run: |
-          echo install python
-          echo install python modules/libraries
+          
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          check-latest: true
+          cache: 'pip' 
+
+      - name: install python modules
+      - run: |
+          pip install -r requirements.txt
           echo create embedded python deployment folder 
           
       - name: list working tree
