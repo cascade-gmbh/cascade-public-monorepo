@@ -27,18 +27,10 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
+          
       - run: |
           pip install -r requirements.txt
-
-      
-      - name: install python
-        run: |
-          echo install python
-          echo install python modules/libraries
-          echo create embedded python deployment folder 
-          
-      - name: list working tree
-        run: ls -R
+          ls -R
           
       - name: build DSL scanner/parser
         run: |
