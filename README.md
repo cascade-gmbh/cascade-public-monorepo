@@ -1,5 +1,7 @@
 # C++23 Big Cross-Platform Project Example
 
+including GitHub workflow jobs for building, testing and deployment.
+
 **Tools**:  
   - CMake, Conan
   - Cppcheck, clang-format, clang-tidy, GCC/Clang Sanitizers
