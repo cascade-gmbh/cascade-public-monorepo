@@ -1,12 +1,12 @@
-name: CI
+name: Quick-Dev-CI
+# Minimal CI on Ubuntu to reduce turnaround times
+# Run this workflow manually from the Actions tab
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # push:
+  #  branches: [ "main" ]
+  # pull_request:
+  #  branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
