@@ -26,7 +26,7 @@ jobs:
         with:
           repository: mingodad/CocoR-CPP@main
           path: cocor
-          ref: main
+          # ref: main
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
