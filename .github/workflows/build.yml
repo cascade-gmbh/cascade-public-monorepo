@@ -27,8 +27,8 @@ jobs:
            submodules: recursive
       - uses: actions/checkout@v3
         with:
-          repository: ocornut/imgui
-          path: imgui
+          repository: mingodad/CocoR-CPP
+          path: cocor
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
