@@ -20,6 +20,8 @@ jobs:
           
     steps:
       - uses: actions/checkout@v3
+        with:
+           submodules: recursive
       
       - name: install python
         run: |
@@ -29,7 +31,7 @@ jobs:
           
       - name: update git submodules
         run: |
-          git submodule update --init --recursive
+          echo git submodule update --init --recursive
           ls -R
           
       - name: build DSL scanner/parser
