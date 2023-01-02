@@ -1,14 +1,15 @@
 name: build
 
 on:
-  workflow_call:          # workflow is reusable
-  workflow_dispatch:      # workflow can be run manually from the actions tab
+  workflow_call:                                                                # workflow is reusable
+  workflow_dispatch:                                                            # workflow can be run manually from the actions tab
 
 jobs:    
 
   build:
+  
     runs-on: ${{ matrix.os }}
-    name: build-${{ matrix.os }}
+    
     strategy:
       fail-fast: false
       matrix:
@@ -16,25 +17,29 @@ jobs:
           - ubuntu-22.04
           - windows-2022
           - macos-12
+          
     steps:
       - uses: actions/checkout@v3
-      - name: Update Submodules
-        run: |
-          git submodule update --init --recursive
-          ls -R
-      - name: Build Embedded Python Environment
+      
+      - name: install python
         run: |
           echo install python
           echo install python modules/libraries
           echo create embedded python deployment folder 
-      - name: Build DSL scanner/parser
+          
+      - name: update git submodules
         run: |
-          echo build Coco/R parser generator
-          echo generate DSL scanner/parser
-      - name: Build C++ Libraries
+          git submodule update --init --recursive
+          ls -Rd
+          
+      - name: build DSL scanner/parser
         run: |
-          echo build c++ libraries
-      - name: Build C++ Apps
+          echo build Coco/R scanner/parser generator
+          echo generate DSL scanner/parser sources for all *.atg
+          
+      - name: C++ artifacts
         run: |
-          echo build c++ apps
-
+          echo build example-dsl-cli
+          echo build example-gui
+          echo build example-static-library
+          echo build example-dynamic-library
