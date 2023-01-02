@@ -22,7 +22,7 @@ jobs:
           - macos-12
           
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout
         with:
           repository: mingodad/CocoR-CPP
           path: cocor
