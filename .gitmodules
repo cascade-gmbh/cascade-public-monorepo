@@ -2,3 +2,8 @@
 	path = submodules/CocoR-CPP
 	url = ../../SSW-CocoR/CocoR-CPP.git
 	branch = main
+
+[submodule "submodules/SDL2"]
+	path = submodules/SDL2
+	url = ../../libsdl-org/SDL.git
+	branch = SDL2
