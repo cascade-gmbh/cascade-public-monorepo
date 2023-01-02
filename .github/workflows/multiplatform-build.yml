@@ -1,13 +1,21 @@
-name: build-ubuntu
+name: multiplatform-build
 
 on:
   workflow_call:          # workflow is reusable
   workflow_dispatch:      # workflow can be run manually from the actions tab
 
-jobs:
+jobs:    
 
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ${{ matrix.os }}
+    # name: ${{ matrix.os }}-build
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-20.04
+          - windows-2022
+          - macos-11
     steps:
       - uses: actions/checkout@v3
       - name: Build Embedded Python Environment
@@ -25,5 +33,4 @@ jobs:
       - name: Build C++ Apps
         run: |
           echo build c++ apps
-
 
