@@ -1,18 +1,13 @@
-name: quick-dev-ci
-# Minimal CI on Ubuntu to reduce turnaround times
-# Run this workflow manually from the Actions tab
+name: build-ubuntu
 
 on:
-  # push:
-  #  branches: [ "main" ]
-  # pull_request:
-  #  branches: [ "main" ]
-  workflow_dispatch:
+  workflow_call:          # workflow is reusable
+  workflow_dispatch:      # workflow can be run manually from the actions tab
 
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Build Embedded Python Environment
