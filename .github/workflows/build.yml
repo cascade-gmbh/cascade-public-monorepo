@@ -22,11 +22,11 @@ jobs:
           - macos-12
           
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
-          repository: mingodad/CocoR-CPP
+          repository: mingodad/CocoR-CPP@main
           path: cocor
-          branch: main
+          ref: main
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
