@@ -18,8 +18,9 @@ jobs:
           - macos-12
     steps:
       - uses: actions/checkout@v3
-      - name: Show Checkout Tree
+      - name: Update Submodules
         run: |
+          git submodule update --init --recursive
           ls -R
       - name: Build Embedded Python Environment
         run: |
