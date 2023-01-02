@@ -18,6 +18,8 @@ jobs:
           - macos-12
     steps:
       - uses: actions/checkout@v3
+      - name: Ls
+       run: ls
       - name: Build Embedded Python Environment
         run: |
           echo install python
