@@ -29,7 +29,7 @@ jobs:
           cache: 'pip' 
           
       - run: |
-          pip install numpy # pandas matplotlib seaborn
+          pip install numpy pandas matplotlib seaborn
           pip freeze
           ls -R
           
