@@ -18,24 +18,19 @@ jobs:
           - windows-2022
           - macos-12
           
-    steps:    
+    steps:
       - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          
-      #- uses: actions/setup-python@v4
-      #  with:
-      #    python-version: '3.10'
-      #    check-latest: true
-      #    cache: 'pip' 
-
-      - name: install python modules
-      - run: |
-          echo pip install -r requirements.txt
+      
+      - name: install python
+        run: |
+          echo install python
+          echo install python modules/libraries
           echo create embedded python deployment folder 
           
-      - name: list working tree
-        run: ls -R
+      - name: update git submodules
+        run: |
+          git submodule update --init --recursive
+          ls -R
           
       - name: build DSL scanner/parser
         run: |
