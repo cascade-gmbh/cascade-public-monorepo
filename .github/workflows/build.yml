@@ -17,9 +17,9 @@ jobs:
           - ubuntu-22.04
           - windows-2022
           - macos-12
-       # arch:
-       #   - x64
-       #   - arm64
+        arch:
+          - x64
+          - arm64
           
     steps:
       - uses: actions/checkout@v3
