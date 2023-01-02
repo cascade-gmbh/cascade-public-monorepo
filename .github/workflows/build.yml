@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: mingodad/CocoR-CPP@main
+          repository: mingodad/CocoR-CPP
           path: cocor
           # ref: main
       - uses: actions/setup-python@v4
