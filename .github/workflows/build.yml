@@ -20,6 +20,8 @@ jobs:
           
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       
       - name: install python
         run: |
@@ -27,10 +29,8 @@ jobs:
           echo install python modules/libraries
           echo create embedded python deployment folder 
           
-      - name: update git submodules
-        run: |
-          git submodule update --init --recursive
-          ls -R
+      - name: list working tree
+        run: ls -R
           
       - name: build DSL scanner/parser
         run: |
