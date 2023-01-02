@@ -27,6 +27,8 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
+      - run: |
+          pip install -r requirements.txt
 
       
       - name: install python
