@@ -1,3 +1,4 @@
 [submodule "submodules/CocoR-CPP"]
 	path = submodules/CocoR-CPP
-	url = ../../SSW-CocoR/CocoR-CPP.git
+	url = https://github.com/SSW-CocoR/CocoR-CPP.git
+	branch = main
