@@ -1,4 +1,3 @@
-[submodule "packages/hasura"]
-	path = packages/hasura
-	url = https://github.com/deep-foundation/hasura.git
-	branch = main
+[submodule "submodules/CocoR-CPP"]
+	path = submodules/CocoR-CPP
+	url = https://github.com/SSW-CocoR/CocoR-CPP.git
