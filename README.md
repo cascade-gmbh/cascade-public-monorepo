@@ -23,7 +23,7 @@ including GitHub workflow jobs for building, testing and deployment.
 ## Directory Structure
 
 apps
-  - example-dsl-generator-cli
+  - example-dsl-cli
   - example-gui
   
 libs
