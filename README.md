@@ -19,29 +19,29 @@ Software components based on C++23 and embedded Python interpreter and packages
 
 ### Python packages
 
-  - [numpy]()
-  - [pandas]()
-  - [matplotlib]()
-  - [seaborn]()
+  - [numpy](https://github.com/numpy/numpy)
+  - [pandas](https://github.com/pandas-dev/pandas)
+  - [matplotlib](https://github.com/matplotlib/matplotlib)
+  - [seaborn](https://github.com/mwaskom/seaborn)
 
 ### Tools
 
-  - [cmake]()
-  - [conan]()
-  - [cppcheck]()
-  - [clang-format]()
-  - [clang-tidy]()
-  - [gcc sanitizers]()
-  - [clang sanitizers]()
-  - [heaptrack]()
-  - [lcov]() 
-  - [gcov]()
-  - [coverity]()
-  - [klee]()
-  - [catch2]()
-  - [asciidoctor]()
-  - []()doxygen
-  - coco/r
+  - [cmake]
+  - [conan]
+  - [cppcheck]
+  - [clang-format]
+  - [clang-tidy]
+  - [gcc sanitizers]
+  - [clang sanitizers]
+  - [heaptrack]
+  - [lcov](
+  - [gcov]
+  - [coverity]
+  - [klee]
+  - [catch2]
+  - [asciidoctor]
+  - [doxygen]
+  - [coco/r]
 
 
   
