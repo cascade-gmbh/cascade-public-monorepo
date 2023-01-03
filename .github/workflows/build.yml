@@ -24,30 +24,33 @@ jobs:
     steps:
     
       - uses: actions/checkout@v3                # project checkout
-      
-      - uses: actions/checkout@v3
-        with:
-          repository: mingodad/CocoR-CPP         # Coco/R
-          path: cocor
-          
-      - uses: actions/checkout@v3
-        with:
-          repository: libsdl-org/SDL             # SDL 
-          path: sdl          
-          
-      - uses: actions/setup-python@v4            # Python 
+      - uses: actions/setup-python@v4            # Python setup
         with:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
+      
+    # - uses: actions/checkout@v3
+    #   with:
+    #     repository: mingodad/CocoR-CPP         # Coco/R
+    #     path: cocor
+    #     
+    # - uses: actions/checkout@v3
+    #   with:
+    #     repository: libsdl-org/SDL             # SDL 
+    #     path: sdl          
+    #     
+    # - run: |
+    #     pip install numpy                      # numpy
+    #     pip install pandas                     # pandas
+    #     pip install matplotlib                 # matplotlib
+    #     pip install seaborn                    # seaborn
+    #     pip freeze
+    #     ls -R
           
-      - run: |
-          pip install numpy                      # numpy
-          pip install pandas                     # pandas
-          pip install matplotlib                 # matplotlib
-          pip install seaborn                    # seaborn
-          pip freeze
-          ls -R
+      - name: Checkout external components
+        run: ./.github/workflow/checkout-external-components.sh
+        shell: bash    
           
       - name: build DSL scanner/parser
         run: |
