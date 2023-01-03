@@ -26,7 +26,11 @@ jobs:
         with:
           repository: mingodad/CocoR-CPP
           path: cocor
-          # ref: main
+      - uses: actions/checkout@v3
+        with:
+          repository: libsdl-org/SDL
+          path: sdl
+          ref: 2.26.1
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
