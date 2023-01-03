@@ -6,14 +6,14 @@ C++23 projects containing embedded Python packages
 
 ## External C++ libraries
 
+  - pybind11
+  - named_type
+  - botan
+  - zlib
   - entt
   - asio
   - sdl
   - opencv
-  - zlib
-  - botan
-  - named_type
-  - pybind11
 
 ## Embedded Python packages
 
