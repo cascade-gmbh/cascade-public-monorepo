@@ -30,7 +30,7 @@ jobs:
           check-latest: true
           cache: 'pip' 
 
-      - run: scripts/checkout-external-components.sh
+      - run: .github/scripts/checkout-external-components.sh
         shell: bash    
           
       - run: |
