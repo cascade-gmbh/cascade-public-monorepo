@@ -1,33 +1,47 @@
-# Cascade Informnationssysteme GmbH Public Monorepo
+# Cascade GmbH Public Monorepo
 
-C++23 projects containing embedded Python packages
+Software components based on C++23 and embedded Python interpreter and packages
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly
 - GCC, Clang, MSVC
 
-## External C++ libraries
+## Dependencies
 
-  - pybind11
-  - named_type
-  - botan
-  - zlib
-  - entt
-  - asio
-  - sdl
-  - opencv
+### C++ libraries
 
-## Embedded Python packages
+  - [pybind11](https://github.com/pybind/pybind11)
+  - [namedtype](https://github.com/joboccara/NamedType)
+  - [botan](https://github.com/randombit/botan)
+  - [zlib](https://github.com/madler/zlib)
+  - [entt](https://github.com/skypjack/entt)
+  - [asio](https://github.com/chriskohlhoff/asio)
+  - [sdl](https://github.com/libsdl-org/SDL)
+  - [opencv](https://github.com/opencv/opencv)
 
-  - numpy
-  - pandas
-  - matplotlib
-  - seaborn
+### Python packages
 
-## Tools
+  - [numpy]()
+  - [pandas]()
+  - [matplotlib]()
+  - [seaborn]()
 
-  - CMake, Conan
-  - Cppcheck, clang-format, clang-tidy, GCC/Clang Sanitizers
-  - Heaptrack, lcov, gcov, Coverity, KLEE
-  - Catch2, Asciidoctor, doxygen, Coco/R
+### Tools
+
+  - [cmake]()
+  - [conan]()
+  - [cppcheck]()
+  - [clang-format]()
+  - [clang-tidy]()
+  - [gcc sanitizers]()
+  - [clang sanitizers]()
+  - [heaptrack]()
+  - [lcov]() 
+  - [gcov]()
+  - [coverity]()
+  - [klee]()
+  - [catch2]()
+  - [asciidoctor]()
+  - []()doxygen
+  - coco/r
 
 
   
