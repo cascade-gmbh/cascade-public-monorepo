@@ -8,7 +8,7 @@ git clone --branch master --recurse-submodules https://github.com/randombit/bota
 git clone --branch master --recurse-submodules https://github.com/madler/zlib
 git clone --branch master --recurse-submodules https://github.com/skypjack/entt
 git clone --branch master --recurse-submodules https://github.com/chriskohlhoff/asio
-git clone --branch master --recurse-submodules https://github.com/libsdl-org/SDL
+git clone --branch main   --recurse-submodules https://github.com/libsdl-org/SDL
 git clone --branch master --recurse-submodules https://github.com/opencv/opencv
 
 echo -----------------------------------------------------
