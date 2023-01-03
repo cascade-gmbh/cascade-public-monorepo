@@ -1,10 +1,11 @@
-# C++23 With Embedded Python Cross-Platform Monorepo Example
+# Cascade Informnationssysteme GmbH Public Monorepo
 
-with complete CI/CD jobs for building, testing and deployment
-  - for Windows, Ubuntu, macOS, iOS, Android, WebAssembly
-  - using GCC, Clang, MSVC
+C++23 projects containing embedded Python packages
+- Windows, Ubuntu, macOS, iOS, Android, WebAssembly
+- GCC, Clang, MSVC
 
-**available C++ libraries**:
+## External C++ libraries
+
   - entt
   - asio
   - sdl
@@ -14,13 +15,15 @@ with complete CI/CD jobs for building, testing and deployment
   - named_type
   - pybind11
 
-**available embedded Python packages**:
+## Embedded Python packages
+
   - numpy
   - pandas
   - matplotlib
   - seaborn
 
-**used tools**:  
+## Tools
+
   - CMake, Conan
   - Cppcheck, clang-format, clang-tidy, GCC/Clang Sanitizers
   - Heaptrack, lcov, gcov, Coverity, KLEE
