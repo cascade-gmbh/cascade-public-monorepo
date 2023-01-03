@@ -1,6 +1,7 @@
 # Cascade GmbH Public Monorepo
 
-Software components based on C++23 and embedded Python interpreter and packages
+Open Source Software components based on C++23 and embedded Python packages
+
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly
 - GCC, Clang, MSVC
 
@@ -37,11 +38,11 @@ Software components based on C++23 and embedded Python interpreter and packages
   - [lcov](
   - [gcov]
   - [coverity]
-  - [klee]
-  - [catch2]
-  - [asciidoctor]
-  - [doxygen]
-  - [coco/r]
+  - [klee](https://github.com/klee/klee)
+  - [catch2](https://github.com/catchorg/Catch2)
+  - [asciidoctor](https://github.com/asciidoctor/asciidoctor)
+  - [doxygen](https://github.com/doxygen/doxygen)
+  - [coco/r](https://github.com/mingodad/CocoR-CPP)
 
 
   
