@@ -4,7 +4,8 @@ with complete CI/CD jobs for building, testing and deployment
   - for Windows, Ubuntu, macOS, iOS, Android, WebAssembly
   - using GCC, Clang, MSVC
 
-**available C++ libraries**: 
+**available C++ libraries**:
+  - entt
   - asio
   - sdl
   - opencv
