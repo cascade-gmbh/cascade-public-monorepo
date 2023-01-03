@@ -1,8 +1,8 @@
 name: build
 
 on:
-  workflow_call:                                         # workflow is reusable
-  workflow_dispatch:                                     # workflow can be run manually from the actions tab
+  workflow_call:       # workflow is reusable
+  workflow_dispatch:   # workflow can be run manually from the actions tab
 
 jobs:    
 
@@ -22,24 +22,30 @@ jobs:
           - macos-12
           
     steps:
-      - uses: actions/checkout@v3
+    
+      - uses: actions/checkout@v3                # project checkout
+      
       - uses: actions/checkout@v3
         with:
-          repository: mingodad/CocoR-CPP
+          repository: mingodad/CocoR-CPP         # Coco/R
           path: cocor
+          
       - uses: actions/checkout@v3
         with:
-          repository: libsdl-org/SDL
-          path: sdl
-          # ref: 2.26.1
-      - uses: actions/setup-python@v4
+          repository: libsdl-org/SDL             # SDL 
+          path: sdl          
+          
+      - uses: actions/setup-python@v4            # Python 
         with:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
           
       - run: |
-          pip install numpy pandas matplotlib seaborn
+          pip install numpy                      # numpy
+          pip install pandas                     # pandas
+          pip install matplotlib                 # matplotlib
+          pip install seaborn                    # seaborn
           pip freeze
           ls -R
           
