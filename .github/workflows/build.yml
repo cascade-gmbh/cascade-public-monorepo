@@ -51,7 +51,7 @@ jobs:
     #     ls -R
           
       - name: Checkout external components
-        run: .github/workflow/checkout-external-components.sh
+        run: scripts/checkout-external-components.sh
         shell: bash    
           
       - name: build DSL scanner/parser
