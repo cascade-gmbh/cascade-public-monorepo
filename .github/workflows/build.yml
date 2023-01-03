@@ -29,6 +29,8 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
+          
+      - run: ls -R
       
     # - uses: actions/checkout@v3
     #   with:
@@ -49,7 +51,7 @@ jobs:
     #     ls -R
           
       - name: Checkout external components
-        run: ./.github/workflow/checkout-external-components.sh
+        run: .github/workflow/checkout-external-components.sh
         shell: bash    
           
       - name: build DSL scanner/parser
