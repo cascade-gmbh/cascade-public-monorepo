@@ -5,22 +5,8 @@ on:
   workflow_dispatch:   # workflow can be run manually from the actions tab
 
 jobs:    
-
-  build:
-  
-    runs-on: ${{ matrix.os }}
-    
-    strategy:
-      fail-fast: false
-      matrix:
-        arch:
-          - x64
-          - arm64
-        os:
-          - ubuntu-22.04
-          - windows-2022
-          - macos-12
-          
+  build:  
+    runs-on: ${{ matrix.os }}    
     steps:    
       - uses: actions/checkout@v3                # project checkout      
       - uses: actions/setup-python@v4            # Python setup
@@ -40,3 +26,14 @@ jobs:
         shell: bash
       - run: .github/scripts/deploy-all.sh
         shell: bash
+
+    strategy:
+      fail-fast: false
+      matrix:
+        arch:
+          - x64
+          - arm64
+        os:
+          - ubuntu-22.04
+          - windows-2022
+          - macos-12
