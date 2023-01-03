@@ -1,0 +1,1 @@
+echo execute automatic deployment
