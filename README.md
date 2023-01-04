@@ -18,12 +18,18 @@ Open Source Software components based on C++23 and embedded Python packages
   - [sdl](https://github.com/libsdl-org/SDL)
   - [opencv](https://github.com/opencv/opencv)
 
+  Git repositories cloned into the working directory of the
+  executing ci/cd-runner by calling .gitlab/scripts/checkount-all.sh
+
 ### Python packages
 
   - [numpy](https://github.com/numpy/numpy)
   - [pandas](https://github.com/pandas-dev/pandas)
   - [matplotlib](https://github.com/matplotlib/matplotlib)
   - [seaborn](https://github.com/mwaskom/seaborn)
+
+  Packages installed into the executing ci/cd-runner
+  by calling .gitlab/scripts/checkount-all.sh
 
 ### Tools
 
