@@ -7,10 +7,10 @@ Open Source Software components based on C++23 and embedded Python packages
 
 ## Contents
 
-  - [Dependencies]()
-    - [C++ Libraries](c-libraries)
-    - [Python Packages]()
-    - [Tools]()
+  - [Dependencies](#dependencies)
+    - [C++ Libraries](#c-libraries)
+    - [Python Packages](#python-packages)
+    - [Tools](#tools)
 
 ## Dependencies
 
