@@ -17,6 +17,7 @@ Open Source Software components based on C++23 and embedded Python packages
   - [asio](https://github.com/chriskohlhoff/asio)
   - [sdl](https://github.com/libsdl-org/SDL)
   - [opencv](https://github.com/opencv/opencv)
+  - [imgui](https://github.com/ocornut/imgui.git)
 
   Git repositories cloned into the working directory of the
   executing ci/cd-runner by calling .gitlab/scripts/checkount-all.sh
