@@ -7,7 +7,7 @@ Open Source Software components based on C++23 and embedded Python packages
 
 ## Dependencies
 
-### C++ libraries
+### C++ Libraries
 
   - [pybind11](https://github.com/pybind/pybind11)
   - [namedtype](https://github.com/joboccara/NamedType)
@@ -22,7 +22,7 @@ Open Source Software components based on C++23 and embedded Python packages
   Git repositories cloned into the working directory of the
   executing ci/cd-runner by calling .gitlab/scripts/checkount-all.sh
 
-### Python packages
+### Python Packages
 
   - [numpy](https://github.com/numpy/numpy)
   - [pandas](https://github.com/pandas-dev/pandas)
