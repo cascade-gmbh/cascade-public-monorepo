@@ -12,9 +12,9 @@ Open Source Software components based on C++23 and embedded Python packages
     - [Python Packages](#python-packages)
     - [Tools](#tools)
 
-  - [Cascade Software Components](#cascade-software-components)
-    - [Coco/R Parser Generator](#cascade-software-components)
-    - [BeMoveD](#cascade-software-components)
+  - [Software Components](#software-components)
+    - [Coco/R Parser Generator](#software-components)
+    - [BeMoveD](#software-components)
 
 ## Dependencies
 
@@ -62,7 +62,7 @@ Open Source Software components based on C++23 and embedded Python packages
   - [doxygen](https://github.com/doxygen/doxygen)
   - [coco/r](https://github.com/mingodad/CocoR-CPP)
 
-## Cascade Software Components
+## Software Components
 
   - [Coco/R Parser Generator]()
   - [BeMoveD]()
