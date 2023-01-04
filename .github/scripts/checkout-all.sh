@@ -1,6 +1,13 @@
 
 echo -----------------------------------------------------
 
+echo install klee
+echo install catch2
+echo install asciidoctor
+echo install doxygen
+
+echo -----------------------------------------------------
+
 git clone -b master --recurse-submodules https://github.com/mingodad/CocoR-CPP
 git clone -b master --recurse-submodules https://github.com/pybind/pybind11
 git clone -b master --recurse-submodules https://github.com/joboccara/NamedType
@@ -25,6 +32,7 @@ pip freeze
 
 echo -----------------------------------------------------
 
+ls ..
 ls
 
 echo -----------------------------------------------------
