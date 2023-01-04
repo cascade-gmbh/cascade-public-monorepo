@@ -5,6 +5,13 @@ Open Source Software components based on C++23 and embedded Python packages
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
 
+## Contents
+
+  - [Dependencies]()
+    - [C++ Libraries](c-libraries)
+    - [Python Packages]()
+    - [Tools]()
+
 ## Dependencies
 
 ### C++ Libraries
