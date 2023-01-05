@@ -15,8 +15,8 @@ Open Source Software components based on C++23 and embedded Python packages
   - [Software Components](#software-components)
     - [Coco/R Parser Generator](#cocor-parser-generator)
     - [BeMoveD](#bemoved)
-      - [Grail-Upload](#grail-upload)
-      - [Runscan-Upload](#runscan-upload)
+      - [BeMoveD Grail-Upload](#grail-upload)
+      - [BeMoveD Runscan-Upload](#runscan-upload)
 
 ## Dependencies
 
@@ -74,11 +74,11 @@ Open Source Software components based on C++23 and embedded Python packages
   
   Subfolder: [components/bemoved](components/bemoved)
   
-#### Grail-Upload
+#### BeMoveD Grail Upload
 
   Subfolder: [components/bemoved/grail-support/grail-upload](/components/bemoved/grail-support/grail-upload)
 
-#### Runscan-Upload
+#### BeMoveD Runscan Upload
 
   Subfolder: [components/bemoved/runscan-support/runscan-upload](/components/bemoved/runscan-support/runscan-upload)
 
