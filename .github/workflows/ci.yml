@@ -15,8 +15,9 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
+      - run: ls  
       - run: .github/scripts/ci.sh               # start ci script
-        shell: bash
+      - run: ls  
 
     strategy:
       fail-fast: false
