@@ -15,10 +15,11 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
-      - run: |
+      - name: execute ci script
+        run: |
           ls ..
           ls
-          .github/scripts/ci.sh                  # start ci script
+          .github/scripts/ci.sh                  # execute ci script
           ls  
         shell: bash
 
