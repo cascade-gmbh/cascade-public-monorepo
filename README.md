@@ -26,7 +26,7 @@ Embedded Python packages²:
   [pandas](https://github.com/pandas-dev/pandas),
   [matplotlib](https://github.com/matplotlib/matplotlib),
   [seaborn](https://github.com/mwaskom/seaborn).
-Tools:
+Tools³:
   [cmake](),
   [conan](),
   [cppcheck](),
@@ -44,8 +44,9 @@ Tools:
   [doxygen](https://github.com/doxygen/doxygen),
   [coco/r](https://github.com/mingodad/CocoR-CPP)
 
-¹) *cloned into the working directory of the executing ci/cd-runners*  
-²) *installed into the executing ci/cd-runners*
+¹) *cloned into the working directory of the devcontainer/executing ci/cd-runners*  
+²) *installed into the devcontainer/executing ci/cd-runners*  
+³) *used by the devcontainer/executing ci/cd-runners*
 
 ---
 
