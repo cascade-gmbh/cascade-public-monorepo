@@ -7,7 +7,7 @@ Open source software components based on C++23 and embedded Python packages.
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
 
-[**Cascade::Metal**](software-components/cascade-metal): Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++ sourcecode. Based upon [Coco/R](https://github.com/mingodad/CocoR-CPP).
+[**Cascade::Metal**](components/metal): Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++ sourcecode. Based upon [Coco/R](https://github.com/mingodad/CocoR-CPP).
 
 ---
 
