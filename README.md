@@ -1,6 +1,8 @@
-# Cascade GmbH Public Monorepo
+# Cascade Public Monorepo
 
-Open Source Software components based on C++23 and embedded Python packages
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Open source software components based on C++23 and embedded Python packages.
 
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
@@ -14,9 +16,6 @@ Open Source Software components based on C++23 and embedded Python packages
 
   - [Software Components](#software-components)
     - [Coco/R Parser Generator](#cocor-parser-generator)
-    - [BeMoveD](#bemoved)
-      - [BeMoveD Grail-Upload](#grail-upload)
-      - [BeMoveD Runscan-Upload](#runscan-upload)
 
 ## Dependencies
 
@@ -68,17 +67,9 @@ Open Source Software components based on C++23 and embedded Python packages
 
 ### Coco/R Parser Generator
 
-  Subfolder: [components/cocor](components/cocor)
+[components/cocor](components/cocor)
 
-### BeMoveD
-  
-  Subfolder: [components/bemoved](components/bemoved)
-  
-#### BeMoveD Grail Upload
+Compiler generator tool used for implementing domain specific languages (DSL). Coco/R stands for compiler compiler generating recursive descent parsers, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
 
-  Subfolder: [components/bemoved/grail-support/grail-upload](/components/bemoved/grail-support/grail-upload)
-
-#### BeMoveD Runscan Upload
-
-  Subfolder: [components/bemoved/runscan-support/runscan-upload](/components/bemoved/runscan-support/runscan-upload)
-
+---
+Copyright (C) 2021 Cascade Informationssysteme GmbH, all rights reserved.
