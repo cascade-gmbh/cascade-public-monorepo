@@ -9,13 +9,21 @@ Open source software components based on C++23 and embedded Python packages.
 
 ## Contents
 
+  - [Software Components](#software-components)
+    - [Coco/R Parser Generator](#cocor-parser-generator)
+
   - [Dependencies](#dependencies)
     - [C++ Libraries](#c-libraries)
     - [Python Packages](#python-packages)
     - [Tools](#tools)
 
-  - [Software Components](#software-components)
-    - [Coco/R Parser Generator](#cocor-parser-generator)
+## Software Components
+
+### Coco/R Parser Generator
+
+[components/cocor](components/cocor)
+
+Compiler generator tool used for implementing domain specific languages (DSL). Coco/R stands for compiler compiler generating recursive descent parsers, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
 
 ## Dependencies
 
@@ -61,14 +69,6 @@ Open source software components based on C++23 and embedded Python packages.
   [asciidoctor](https://github.com/asciidoctor/asciidoctor),
   [doxygen](https://github.com/doxygen/doxygen),
   [coco/r](https://github.com/mingodad/CocoR-CPP)
-
-## Software Components
-
-### Coco/R Parser Generator
-
-[components/cocor](components/cocor)
-
-Compiler generator tool used for implementing domain specific languages (DSL). Coco/R stands for compiler compiler generating recursive descent parsers, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
 
 ---
 
