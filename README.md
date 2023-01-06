@@ -44,9 +44,9 @@ Tools³:
   [doxygen](https://github.com/doxygen/doxygen),
   [coco/r](https://github.com/mingodad/CocoR-CPP)
 
-¹) *cloned into the working directory of the devcontainer/executing ci/cd-runners*  
-²) *installed into the devcontainer/executing ci/cd-runners*  
-³) *used by the devcontainer/executing ci/cd-runners*
+¹) *cloned into the working directory of the devcontainer/ci/cd-runners*  
+²) *installed into the devcontainer/ci/cd-runners*  
+³) *used by the devcontainer/ci/cd-runners*
 
 ---
 
