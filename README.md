@@ -1,6 +1,5 @@
 # Cascade Public Monorepo
 
-![](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/ci.yml/badge.svg)
 
 Open source software components based on C++23 and embedded Python packages.
@@ -72,4 +71,7 @@ Open source software components based on C++23 and embedded Python packages.
 Compiler generator tool used for implementing domain specific languages (DSL). Coco/R stands for compiler compiler generating recursive descent parsers, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
 
 ---
+
 Copyright (C) 2021 Cascade Informationssysteme GmbH, all rights reserved.
+
+![](https://img.shields.io/badge/License-MIT-yellow.svg)
