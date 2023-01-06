@@ -1,5 +1,5 @@
 
-
+ls
 
       - run: .github/scripts/checkout-all.sh
         shell: bash
