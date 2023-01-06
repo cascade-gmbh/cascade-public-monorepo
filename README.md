@@ -11,7 +11,7 @@ Open source software components based on C++23 and embedded Python packages.
 
 ---
 
-Used external C++ libraries¹:
+External C++ libraries¹:
   [pybind11](https://github.com/pybind/pybind11),
   [namedtype](https://github.com/joboccara/NamedType),
   [botan](https://github.com/randombit/botan),
@@ -21,12 +21,12 @@ Used external C++ libraries¹:
   [sdl](https://github.com/libsdl-org/SDL),
   [opencv](https://github.com/opencv/opencv),
   [imgui](https://github.com/ocornut/imgui.git).
-Used external Python packages²:
+Embedded Python packages²:
   [numpy](https://github.com/numpy/numpy),
   [pandas](https://github.com/pandas-dev/pandas),
   [matplotlib](https://github.com/matplotlib/matplotlib),
   [seaborn](https://github.com/mwaskom/seaborn).
-Used external tools:
+Tools:
   [cmake](),
   [conan](),
   [cppcheck](),
