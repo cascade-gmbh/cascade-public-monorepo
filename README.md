@@ -20,7 +20,8 @@ External C++ libraries¹:
   [asio](https://github.com/chriskohlhoff/asio),
   [sdl](https://github.com/libsdl-org/SDL),
   [opencv](https://github.com/opencv/opencv),
-  [imgui](https://github.com/ocornut/imgui.git).
+  [imgui](https://github.com/ocornut/imgui.git),
+  [sycl](https://github.com/codeplaysoftware/computecpp-sdk.git).
 Embedded Python packages²:
   [numpy](https://github.com/numpy/numpy),
   [pandas](https://github.com/pandas-dev/pandas),
