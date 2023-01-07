@@ -1,4 +1,4 @@
-# Cascade Public Monorepo
+# Cascade Public Monorepo (not yet released!)
 
 ![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/ci.yml/badge.svg)
 
