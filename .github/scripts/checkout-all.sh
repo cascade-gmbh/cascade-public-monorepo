@@ -22,10 +22,10 @@ git clone -b master --recurse-submodules --depth 1 https://github.com/codeplayso
 
 echo -----------------------------------------------------
 
-pip install --force-reinstall -v "numpy==1.24"
-pip install --force-reinstall -v "pandas==1.5"
-pip install --force-reinstall -v "matplotlib==3.6"
-pip install --force-reinstall -v "seaborn==0.12"
+pip install -v "numpy==1.24"
+pip install -v "pandas==1.5"
+pip install -v "matplotlib==3.6"
+pip install -v "seaborn==0.12"
 
 # contourpy==1.0.6
 # cycler==0.11.0
