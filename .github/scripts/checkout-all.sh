@@ -18,6 +18,7 @@ git clone -b master --recurse-submodules https://github.com/chriskohlhoff/asio
 git clone -b main   --recurse-submodules https://github.com/libsdl-org/SDL
 git clone -b master --recurse-submodules https://github.com/opencv/opencv
 git clone -b master --recurse-submodules https://github.com/ocornut/imgui.git
+git clone -b master --recurse-submodules https://github.com/codeplaysoftware/computecpp-sdk.git
 
 echo -----------------------------------------------------
 
