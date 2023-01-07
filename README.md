@@ -45,7 +45,7 @@ Tools:
 
 ---
 
-[**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Based upon [Coco/R](https://github.com/mingodad/CocoR-CPP). Dependencies: STL only.
+[**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Based upon [Coco/R](https://github.com/mingodad/CocoR-CPP). Dependencies: C++23 only.
 
 ---
 
