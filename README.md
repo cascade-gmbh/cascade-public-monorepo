@@ -51,6 +51,6 @@ Tools³:
 
 ---
 
-Copyright (C) 2021 Cascade Informationssysteme GmbH, all rights reserved.
+Copyright (C) 2023 Cascade Informationssysteme GmbH, all rights reserved.
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
