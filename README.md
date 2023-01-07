@@ -45,7 +45,7 @@ Tools:
   [doxygen](https://github.com/doxygen/doxygen),
   [coco/r](https://github.com/mingodad/CocoR-CPP)
 
-*installed/cloned by [install-all.sh](.github/scripts) into the working directory of the devcontainer/ci-runners*  
+*installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the devcontainer/ci-runners*  
 
 ---
 
