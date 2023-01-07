@@ -15,7 +15,7 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
-      - run: pip install -r ./github/scripts/embedded-packages.txt
+      - run: pip install -r .github/scripts/embedded-packages.txt
       - name: Execute ci script
         run: |
           ls ..
