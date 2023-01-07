@@ -7,11 +7,7 @@ Open source software components based on C++23 and embedded Python packages.
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
 
-[**Cascade::Metal**](components/metal): Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Based upon [Coco/R](https://github.com/mingodad/CocoR-CPP), dependencies: STL only.
-
----
-
-External components installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the [(dev-)containers](.github/container) and [ci-runners](.github/workflows):
+External components (installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the [(dev-)containers](.github/container) and [ci-runners](.github/workflows)):
 
 - C++ libraries:
   [pybind11](https://github.com/pybind/pybind11),
@@ -46,6 +42,10 @@ Tools:
   [asciidoctor](https://github.com/asciidoctor/asciidoctor),
   [doxygen](https://github.com/doxygen/doxygen),
   [coco/r](https://github.com/mingodad/CocoR-CPP).
+
+---
+
+[**Cascade::Metal**](components/metal): Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Based upon [Coco/R](https://github.com/mingodad/CocoR-CPP), dependencies: STL only.
 
 ---
 
