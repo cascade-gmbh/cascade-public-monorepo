@@ -11,7 +11,9 @@ Open source software components based on C++23 and embedded Python packages.
 
 ---
 
-External C++ libraries:
+External components installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the [(dev-)containers](.github/container) and [ci-runners](.github/workflows):
+
+- C++ libraries:
   [pybind11](https://github.com/pybind/pybind11),
   [namedtype](https://github.com/joboccara/NamedType),
   [botan](https://github.com/randombit/botan),
@@ -22,7 +24,7 @@ External C++ libraries:
   [opencv](https://github.com/opencv/opencv),
   [imgui](https://github.com/ocornut/imgui.git),
   [sycl](https://github.com/codeplaysoftware/computecpp-sdk.git).
-Embedded Python packages:
+Python packages:
   [numpy](https://github.com/numpy/numpy),
   [pandas](https://github.com/pandas-dev/pandas),
   [matplotlib](https://github.com/matplotlib/matplotlib),
@@ -44,8 +46,6 @@ Tools:
   [asciidoctor](https://github.com/asciidoctor/asciidoctor),
   [doxygen](https://github.com/doxygen/doxygen),
   [coco/r](https://github.com/mingodad/CocoR-CPP).
-
-*All installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the devcontainer/ci-runners*  
 
 ---
 
