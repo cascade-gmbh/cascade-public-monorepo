@@ -27,21 +27,6 @@ pip install -v "pandas==1.5"
 pip install -v "matplotlib==3.6"
 pip install -v "seaborn==0.12"
 
-# contourpy==1.0.6
-# cycler==0.11.0
-# fonttools==4.38.0
-# kiwisolver==1.4.4
-# matplotlib==3.6.2
-# numpy==1.24.1
-# packaging==22.0
-# pandas==1.5.2
-# Pillow==9.4.0
-# pyparsing==3.0.9
-# python-dateutil==2.8.2
-# pytz==2022.7
-# seaborn==0.12.2
-# six==1.16.0
-
 echo -----------------------------------------------------
 
 pip freeze
