@@ -1,6 +1,6 @@
 # Cascade Public Monorepo - not yet released!
 
-![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/ci.yml/badge.svg)
+[![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/ci.yml/badge.svg)](.github/workflows/ci.yml)
 
 Open source software components based on C++23 and embedded Python packages.
 
