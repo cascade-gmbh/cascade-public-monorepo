@@ -12,7 +12,7 @@ See [Compiler support for C++23](https://en.cppreference.com/w/cpp/compiler_supp
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
 
-External components (installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the [(dev-)containers](.github/container) and [ci-workflows](.github/workflows)):
+External components (installed/cloned by [install-all.sh](.github/scripts/install-all.sh) into the working directory of the [(dev-)containers](.github/containers) and [ci-workflows](.github/workflows)):
 
 - C++ libraries:
   [pybind11](https://github.com/pybind/pybind11),
