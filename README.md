@@ -1,7 +1,7 @@
 # Cascade Public Monorepo - not yet released!
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/ci.yml/badge.svg)](.github/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Open source software components based on C++23 and embedded Python packages.
 
