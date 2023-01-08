@@ -45,13 +45,13 @@ Tools:
   [catch2](https://github.com/catchorg/Catch2),
   [asciidoctor](https://github.com/asciidoctor/asciidoctor),
   [doxygen](https://github.com/doxygen/doxygen),
-  [cocor](https://github.com/mingodad/CocoR-CPP).
+  [Coco/R](https://github.com/mingodad/CocoR-CPP).
 
 This repo is also intended to be used as template/example for complex CI/CD projects.
 
 ---
 
-[**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Dependencies: C++23, [Coco/R](https://github.com/mingodad/CocoR-CPP) executable.
+[**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Dependencies: C++23, Coco/R executable.
 
 ---
 
