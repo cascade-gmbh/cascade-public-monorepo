@@ -6,7 +6,8 @@ on:
 
 jobs:    
 
-  deploy-all:  
+  deploy:  
+  
     runs-on: ${{ matrix.os }}    
     steps:    
       - run: ls
