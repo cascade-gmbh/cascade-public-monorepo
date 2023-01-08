@@ -16,13 +16,11 @@ jobs:
           check-latest: true
           cache: 'pip' 
       - run: pip install -r .github/scripts/embedded-packages.txt
-      - name: Execute build script
-        run: |
-          ls ..
-          ls
-          .github/scripts/build-all.sh              # execute build script
-          ls  
-        shell: bash
+      - run: ls ..
+      - run: ls
+      - run: .github/scripts/install-all.sh 
+      - run: .github/scripts/build-all.sh 
+      - run: ls 
 
     strategy:
       fail-fast: false
