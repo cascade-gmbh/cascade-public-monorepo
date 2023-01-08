@@ -1,2 +1,3 @@
-# intentionally left empty
-# look for 'pip install' in ci/cd jobs
+# python requirements
+# intentionally left empty 
+# look for 'pip install' in ../scripts/intall-all.sh
