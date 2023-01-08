@@ -6,7 +6,7 @@ on:
   
 jobs:    
 
-  docall:  
+  doc:  
     runs-on: ${{ matrix.os }}    
     steps:    
       - run: ls
