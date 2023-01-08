@@ -1,6 +1,6 @@
 # Cascade Public Monorepo - not yet released!
 
-[![license: MIT](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![license: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/build.yml/badge.svg)](.github/workflows/build.yml)
 [![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/test.yml/badge.svg)](.github/workflows/test.yml)
 [![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/doc.yml/badge.svg)](.github/workflows/doc.yml)
