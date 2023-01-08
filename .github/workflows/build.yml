@@ -15,7 +15,8 @@ jobs:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
-      - run: pip install -r .github/scripts/python-requirements.txt
+          cache-dependency-path: .github/scripts
+      - run: pip install -r .github/scripts/requirements.txt
       - run: ls ..
       - run: ls
       - run: .github/scripts/install-all.sh 
