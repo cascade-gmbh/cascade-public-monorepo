@@ -1,0 +1,5 @@
+name: test
+
+on:
+  workflow_call:       # workflow is reusable
+  workflow_dispatch:   # workflow can be run manually from the actions tab
