@@ -7,6 +7,7 @@
 [![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
 
 Open source software components based on C++23 and embedded Python packages.
+See [Compiler support for C++23](https://en.cppreference.com/w/cpp/compiler_support/23).
 
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
