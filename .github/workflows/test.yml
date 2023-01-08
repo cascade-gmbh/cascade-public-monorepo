@@ -6,7 +6,7 @@ on:
 
 jobs:    
 
-  test-all:  
+  test:  
   
     runs-on: ${{ matrix.os }}    
     steps:    
