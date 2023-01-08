@@ -2,6 +2,9 @@
 
 [![license: MIT](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/build.yml/badge.svg)](.github/workflows/build.yml)
+[![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/doc.yml/badge.svg)](.github/workflows/doc.yml)
+[![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/test.yml/badge.svg)](.github/workflows/test.yml)
+[![](https://github.com/cascade-gmbh/cascade-public/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
 
 Open source software components based on C++23 and embedded Python packages.
 
