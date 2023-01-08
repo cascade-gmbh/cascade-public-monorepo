@@ -3,3 +3,22 @@ name: test
 on:
   workflow_call:       # workflow is reusable
   workflow_dispatch:   # workflow can be run manually from the actions tab
+
+jobs:    
+
+  test-all:  
+  
+    runs-on: ${{ matrix.os }}    
+    steps:    
+      - run: ls
+
+    strategy:
+      fail-fast: false
+      matrix:
+        arch:
+          - x64
+          - arm64
+        os:
+          - ubuntu-22.04
+          - windows-2022
+          - macos-12
