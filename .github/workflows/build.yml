@@ -44,20 +44,20 @@ jobs:
           cache-dependency-path: .github/scripts          
       - run: pip install -r .github/scripts/requirements.txt
 
-   #   - name: Setup Cpp
-   #     uses: aminya/setup-cpp@v1
-   #     with:
-   #       compiler: ${{ matrix.compiler }}
-   #       vcvarsall: ${{ contains(matrix.os, 'windows' )}}
-   #       cmake: true
-   #       ninja: true
-   #       conan: true
-   #       vcpkg: false
-   #       ccache: true
-   #       clangtidy: ${{ env.CLANG_TIDY_VERSION }}
-   #       cppcheck: true
-   #       gcovr: true
-   #       opencppcoverage: true
+      - name: Setup Cpp
+        uses: aminya/setup-cpp@v1
+        with:
+          compiler: ${{ matrix.compiler }}
+          vcvarsall: ${{ contains(matrix.os, 'windows' )}}
+          cmake: true
+          ninja: true
+          conan: true
+          vcpkg: false
+          ccache: true
+          clangtidy: ${{ env.CLANG_TIDY_VERSION }}
+          cppcheck: true
+          gcovr: true
+          opencppcoverage: true
 
       - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
