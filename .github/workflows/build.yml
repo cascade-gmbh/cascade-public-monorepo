@@ -4,32 +4,90 @@ on:
   workflow_call:       # workflow is reusable
   workflow_dispatch:   # workflow can be run manually from the actions tab
 
+env:
+  # Conan cache environment variables
+  CONAN_SYSREQUIRES_MODE: enabled
+  CONAN_USER_HOME: "${{ github.workspace }}/conan-cache"
+  CONAN_USER_HOME_SHORT: "${{ github.workspace }}/conan-cache/short"
+  CLANG_TIDY_VERSION: "15.0.6"
+  
 jobs:    
 
   ci:  
     runs-on: ${{ matrix.os }}    
+
     steps:    
-      - uses: actions/checkout@v3                # checkout project
-      - uses: actions/setup-python@v4            # setup Python 
+    
+      - uses: actions/checkout@v3
+
+   #   - name: Check for llvm version mismatches
+   #     if: ${{ contains(matrix.compiler, 'llvm') && !contains(matrix.compiler, env.CLANG_TIDY_VERSION) }}
+   #     uses: actions/github-script@v3
+   #     with:
+   #       script: |
+   #         core.setFailed('There is a mismatch between configured llvm compiler and clang-tidy version chosen')
+    
+   #   - name: Setup Cache
+   #     uses: ./.github/actions/setup_cache
+   #     with:
+   #       compiler: ${{ matrix.compiler }}
+   #       build_type: ${{ matrix.build_type }}
+   #       developer_mode: ${{ matrix.developer_mode }}
+   #       generator: ${{ matrix.generator }} 
+             
+      - name: Setup Python 
+        uses: actions/setup-python@v4            
         with:
           python-version: '3.10'
           check-latest: true
           cache: 'pip' 
-          cache-dependency-path: .github/scripts
+          cache-dependency-path: .github/scripts          
       - run: pip install -r .github/scripts/requirements.txt
-      - run: ls ..
-      - run: ls
+
+   #   - name: Setup Cpp
+   #     uses: aminya/setup-cpp@v1
+   #     with:
+   #       compiler: ${{ matrix.compiler }}
+   #       vcvarsall: ${{ contains(matrix.os, 'windows' )}}
+   #       cmake: true
+   #       ninja: true
+   #       conan: true
+   #       vcpkg: false
+   #       ccache: true
+   #       clangtidy: ${{ env.CLANG_TIDY_VERSION }}
+   #       cppcheck: true
+   #       gcovr: true
+   #       opencppcoverage: true
+
       - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
-      - run: ls 
 
     strategy:
+
       fail-fast: false
+
       matrix:
-        arch:
-          - x64
-          - arm64
         os:
           - ubuntu-22.04
-          - windows-2022
-          - macos-12
+        # - windows-2022
+        # - macos-12
+        arch:
+          - X64
+        # - ARM64
+        compiler:
+          - llvm-15.0.6
+        # - gcc-13
+        generator:
+          - "Ninja Multi-Config"
+        build_type:
+          - Debug
+        # - Release
+        developer_mode:
+          - ON
+        # - OFF  
+          
+          
+          
+          
+          
+          
