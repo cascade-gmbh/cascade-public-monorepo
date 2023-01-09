@@ -42,7 +42,7 @@ clone_into_external master https://github.com/mingodad/CocoR-CPP
 echo -----------------------------------------------------
 
 #pip install -v "numpy==1.24"
-#pip install -v "pandas==1.5"
+pip install -v "pandas==1.5"
 #pip install -v "matplotlib==3.6"
 #pip install -v "seaborn==0.12"
 
