@@ -17,20 +17,20 @@ jobs:
     runs-on: ${{ matrix.os }}    
 
     steps:    
-    
-      - run echo github.workspace       ${{ github.workspace }
-      - run echo matrix.os              ${{ matrix.os }
-      - run echo matrix.arch            ${{ matrix.arch }
-      - run echo matrix.compiler        ${{ matrix.compiler }}
-      - run echo matrix.build_type      ${{ matrix.build_type }}
-      - run echo matrix.developer_mode  ${{ matrix.developer_mode }}
-      - run echo matrix.generator       ${{ matrix.generator }}
+   
+      - run: echo github.workspace       ${{ github.workspace }
+      - run: echo matrix.os              ${{ matrix.os }
+      - run: echo matrix.arch            ${{ matrix.arch }
+      - run: echo matrix.compiler        ${{ matrix.compiler }}
+      - run: echo matrix.build_type      ${{ matrix.build_type }}
+      - run: echo matrix.developer_mode  ${{ matrix.developer_mode }}
+      - run: echo matrix.generator       ${{ matrix.generator }}
  
-      - run echo env.HOME               ${{ env.HOME }
-      - run echo env.XDG_CACHE_HOME     ${{ env.XDG_CACHE_HOME }
-      - run echo env.LOCALAPPDATA       ${{ env.LOCALAPPDATA }
-      - run echo env.APPDATA            ${{ env.APPDATA }
-      - run echo env.BUILD_TYPE         ${{ env.BUILD_TYPE } 
+      - run: echo env.HOME               ${{ env.HOME }
+      - run: echo env.XDG_CACHE_HOME     ${{ env.XDG_CACHE_HOME }
+      - run: echo env.LOCALAPPDATA       ${{ env.LOCALAPPDATA }
+      - run: echo env.APPDATA            ${{ env.APPDATA }
+      - run: echo env.BUILD_TYPE         ${{ env.BUILD_TYPE } 
  
       - uses: actions/checkout@v3
       
