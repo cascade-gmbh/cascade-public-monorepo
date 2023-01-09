@@ -18,13 +18,8 @@ jobs:
 
     steps:    
    
-      - run: echo github.workspace       ${{ github.workspace }}
-      - run: echo matrix.os              ${{ matrix.os }}
-      - run: echo matrix.arch            ${{ matrix.arch }}
-      - run: echo matrix.compiler        ${{ matrix.compiler }}
-      - run: echo matrix.build_type      ${{ matrix.build_type }}
-      - run: echo matrix.developer_mode  ${{ matrix.developer_mode }}
-      - run: echo matrix.generator       ${{ matrix.generator }}
+      - run: echo ${{ github.workspace }} 
+      - run: ${{ matrix.os }} ${{ matrix.arch }} ${{ matrix.generator }} ${{ matrix.compiler }} ${{ matrix.build_type }} ${{ matrix.developer_mode }} 
  
       - uses: actions/checkout@v3
       
@@ -44,12 +39,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.compiler }}-${{ matrix.build_type }}-${{ hashFiles('./conanfile.txt') }}
 
-      - run: echo env.HOME               ${{ env.HOME }}
-      - run: echo env.XDG_CACHE_HOME     ${{ env.XDG_CACHE_HOME }}
-      - run: echo env.LOCALAPPDATA       ${{ env.LOCALAPPDATA }}
-      - run: echo env.APPDATA            ${{ env.APPDATA }}
-      - run: echo env.BUILD_TYPE         ${{ env.BUILD_TYPE }} 
- 
       - name: Setup Cpp
         uses: aminya/setup-cpp@v1
         with:
