@@ -27,13 +27,13 @@ jobs:
    #       script: |
    #         core.setFailed('There is a mismatch between configured llvm compiler and clang-tidy version chosen')
     
-   #   - name: Setup Cache
-   #     uses: ./.github/actions/setup_cache
-   #     with:
-   #       compiler: ${{ matrix.compiler }}
-   #       build_type: ${{ matrix.build_type }}
-   #       developer_mode: ${{ matrix.developer_mode }}
-   #       generator: ${{ matrix.generator }} 
+      - name: Setup Cache
+        uses: ./.github/actions/setup_cache
+        with:
+          compiler: ${{ matrix.compiler }}
+          build_type: ${{ matrix.build_type }}
+          developer_mode: ${{ matrix.developer_mode }}
+          generator: ${{ matrix.generator }} 
              
       - name: Setup Python 
         uses: actions/setup-python@v4            
