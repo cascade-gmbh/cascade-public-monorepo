@@ -19,7 +19,9 @@ jobs:
     steps:    
    
       - run: echo ${{ github.workspace }} 
-      - run: ${{ matrix.os }} ${{ matrix.arch }} ${{ matrix.generator }} ${{ matrix.compiler }} ${{ matrix.build_type }} ${{ matrix.developer_mode }} 
+      - run: echo ${{ matrix.os }} ${{ matrix.arch }} 
+      - run: echo ${{ matrix.generator }} ${{ matrix.compiler }} ${{ matrix.build_type }} 
+      - run: dev-mode ${{ matrix.developer_mode }} 
  
       - uses: actions/checkout@v3
       
