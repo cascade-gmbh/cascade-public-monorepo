@@ -10,7 +10,7 @@
 #      gcc \
 #      g++ \
 #      gdb \
-#     clang \
+#      clang \
 #      make \
 #      ninja-build \
 #      cmake \
@@ -50,8 +50,7 @@ RUN bash -c 'source ~/.cpprc \
     && task build'
 
 ### Running environment
-# use a distroless image or ubuntu:22.04 if you wish
-FROM gcr.io/distroless/cc
+FROM ubuntu:22.04 
 # copy the built binaries and their runtime dependencies
 COPY --from=builder /home/app/build/my_exe/Release/ /home/app/
 WORKDIR /home/app/
