@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # attention: script assumes to have the repo-root as current directory!
 
 # external components will be either installed 
