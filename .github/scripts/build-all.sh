@@ -2,7 +2,7 @@
 # attention: script assumes to have the repo-root as current directory!
 
 # build Coco/R executable:
-./components/metal/cocor/build-cocor.sh
+./components/metal/cocor/build.sh
 
 
 
