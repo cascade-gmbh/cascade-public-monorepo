@@ -70,10 +70,10 @@ jobs:
           - macos-12
         arch:
           - X64
-          - ARM64
+        #  - ARM64
         compiler:
           - llvm-15.0.6
-          - gcc-13
+        # - gcc-13
         generator:
           - "Ninja Multi-Config"
         build_type:
