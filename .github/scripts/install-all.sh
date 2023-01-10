@@ -26,7 +26,6 @@ clone_into_external() {
 
 echo -----------------------------------------------------
 
-clone_into_external master https://github.com/mingodad/CocoR-CPP
 #clone_into_external master https://github.com/pybind/pybind11 
 #clone_into_external master https://github.com/joboccara/NamedType 
 #clone_into_external master https://github.com/randombit/botan
