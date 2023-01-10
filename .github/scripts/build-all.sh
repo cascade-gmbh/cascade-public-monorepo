@@ -12,6 +12,6 @@ echo ------------------------------------------------------- BUILD-ALL
 echo ------------------------------------------------------- BUILD-ALL END
 echo RESULTS:
 echo ~/cmake_out
-ls -lp --group-directories-first ~/cmake_out
+ls -lp ~/cmake_out
 
 

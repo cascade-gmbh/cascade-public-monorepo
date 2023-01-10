@@ -16,7 +16,7 @@ cmake --build ~/cmake_out/cocor
 # show resulting build directory
 echo BUILD RESULTS:
 echo ~/cmake_out/cocor
-ls -lp --group-directories-first --color --classify ~/cmake_out/cocor
+ls -lp --color --classify ~/cmake_out/cocor
 
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
