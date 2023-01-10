@@ -51,7 +51,7 @@ This repo is also intended to be used as template/example for complex CI/CD proj
 
 ---
 
-[**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Dependencies: C++23, Coco/R executable.
+[**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Dependencies: C++23, Coco/R.
 
 ---
 
