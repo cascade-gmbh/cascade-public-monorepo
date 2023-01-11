@@ -12,7 +12,7 @@ echo ------------------------------------------------------- BUILD-ALL END
 
 # show resulting build directory:
 echo RESULTS:
-echo $PROJECT_BUILD_HOME
-ls -gpF $PROJECT_BUILD_HOME
+#echo $PROJECT_BUILD_HOME
+#ls -gpF $PROJECT_BUILD_HOME
 
 
