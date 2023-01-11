@@ -10,16 +10,16 @@ echo ------------------------------------------------------- build-cocor
 
 # invoke cmake
 echo BUILD-COCOR:
-cmake ./ -B ~/cmake_out/cocor
-cmake --build ~/cmake_out/cocor
+cmake ./ -B $PROJECT_BUILD_HOME/cocor
+cmake --build $PROJECT_BUILD_HOME/cocor
 
 # show resulting build directory
 echo BUILD RESULTS:
 echo ~/cmake_out/cocor
-ls -gpF --color ~/cmake_out/cocor
+ls -gpF --color PROJECT_BUILD_HOME/cocor
 
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
-~/cmake_out/cocor/cocor 
+$PROJECT_BUILD_HOME/cocor/cocor 
 
 
