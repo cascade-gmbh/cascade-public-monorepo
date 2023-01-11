@@ -6,8 +6,6 @@ on:
   workflow_dispatch:   # workflow can be run manually from the actions tab
 
 env:
-  PROJECT_BUILD_HOME: "{{ github.workspace }}/cmake-out"
-  PROJECT_DEPLOY_HOME: "{{ github.workspace }}/.github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}"
   # Conan cache environment variables
   CONAN_SYSREQUIRES_MODE: enabled
   CONAN_USER_HOME: "${{ github.workspace }}/conan-cache"
@@ -19,6 +17,10 @@ jobs:
   ci:  
     runs-on: ${{ matrix.os }}    
 
+    env:
+      PROJECT_BUILD_HOME: "{{ github.workspace }}/cmake-out"
+      PROJECT_DEPLOY_HOME: "{{ github.workspace }}/.github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}"
+ 
     steps:    
    
       - run: echo ${{ github.workspace }} 
