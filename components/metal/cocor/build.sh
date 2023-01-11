@@ -15,7 +15,7 @@ cmake --build $PROJECT_BUILD_HOME/cocor
 
 # show resulting build directory
 echo BUILD RESULTS:
-echo ~/cmake_out/cocor
+echo $PROJECT_BUILD_HOME/cocor
 ls -gpF --color PROJECT_BUILD_HOME/cocor
 
 # simple test
