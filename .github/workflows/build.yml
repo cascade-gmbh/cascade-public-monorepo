@@ -18,15 +18,13 @@ jobs:
     runs-on: ${{ matrix.os }}    
 
     env:
-      PROJECT_BUILD_HOME: "{{ github.workspace }}/cmake-out"
-      PROJECT_DEPLOY_HOME: "{{ github.workspace }}/.github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}"
+      PROJECT_BUILD_HOME: "${{ github.workspace }}/cmake-out"
+      PROJECT_DEPLOY_HOME: "${{ github.workspace }}/.github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}"
  
     steps:    
    
-      - run: echo ${{ github.workspace }} 
-      - run: echo ${{ matrix.os }} ${{ matrix.arch }} 
-      - run: echo ${{ matrix.generator }} ${{ matrix.compiler }} ${{ matrix.build_type }} 
-      - run: echo dev-mode ${{ matrix.developer_mode }} 
+      - run: echo PROJECT_BUILD_HOME $PROJECT_BUILD_HOME
+      - run: echo PROJECT_DEPLOY_HOME $PROJECT_DEPLOY_HOME
  
       - uses: actions/checkout@v3
         with:
@@ -71,14 +69,14 @@ jobs:
       matrix:
         os:
           - ubuntu-22.04
-          - windows-2022
-          - macos-12
+        #  - windows-2022
+       # - macos-12
         arch:
           - X64
-          - ARM64
+         # - ARM64
         compiler:
           - llvm
-          - gcc
+        #  - gcc
         generator:
           - "Ninja Multi-Config"
         build_type:
