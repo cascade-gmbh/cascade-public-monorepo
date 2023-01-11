@@ -8,8 +8,9 @@ echo ------------------------------------------------------- BUILD-ALL
 # build Coco/R executable:
 ../../components/metal/cocor/build.sh
 
-# show resulting build directory:
 echo ------------------------------------------------------- BUILD-ALL END
+
+# show resulting build directory:
 echo RESULTS:
 echo ~/cmake_out
 ls -gpF ~/cmake_out
