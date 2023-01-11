@@ -59,6 +59,19 @@ jobs:
           
       - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .github/pages/
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1  
+      
+      
+      
 
     strategy:
 
