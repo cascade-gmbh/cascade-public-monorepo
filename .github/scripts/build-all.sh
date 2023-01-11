@@ -12,7 +12,7 @@ echo ------------------------------------------------------- BUILD-ALL END
 
 # show resulting build directory:
 echo RESULTS:
-echo ~/cmake_out
-ls -gpF ~/cmake_out
+echo $PROJECT_BUILD_HOME
+ls -gpF $PROJECT_BUILD_HOME
 
 
