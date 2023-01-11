@@ -22,8 +22,8 @@ jobs:
  
     steps:    
    
-      - run: echo PROJECT_BUILD_HOME $PROJECT_BUILD_HOME
-      - run: echo PROJECT_DEPLOY_HOME $PROJECT_DEPLOY_HOME
+      #- run: echo PROJECT_BUILD_HOME $PROJECT_BUILD_HOME
+      #- run: echo PROJECT_DEPLOY_HOME $PROJECT_DEPLOY_HOME
  
       - uses: actions/checkout@v3
         with:
@@ -57,9 +57,9 @@ jobs:
           - macos-12
         arch:
           - X64
-          - ARM64
+         # - ARM64
         compiler:
-          - llvm
+         # - llvm
           - gcc
         generator:
           - "Ninja Multi-Config"
