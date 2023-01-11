@@ -9,8 +9,9 @@ jobs:
   deploy:  
   
     runs-on: ${{ matrix.os }}    
-    steps:    
-      - run: .github/scripts/deploy-all.sh 
+    steps:   
+      - run: wget --no-verbose "https://github.com/octo-org/octo-repo/releases/new?prerelease=1"
+    # - run: .github/scripts/deploy-all.sh 
 
     strategy:
       fail-fast: false
