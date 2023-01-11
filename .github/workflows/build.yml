@@ -61,9 +61,6 @@ jobs:
           
       - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
-      
-      - run: mkdir -p .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
-      - run: cp ~/cmake_out/cocor/cocor .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
 
     strategy:
 
