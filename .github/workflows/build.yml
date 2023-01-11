@@ -53,14 +53,14 @@ jobs:
       matrix:
         os:
           - ubuntu-22.04
-        #  - windows-2022
-       # - macos-12
+          - windows-2022
+          - macos-12
         arch:
           - X64
-         # - ARM64
+          - ARM64
         compiler:
           - llvm
-        #  - gcc
+          - gcc
         generator:
           - "Ninja Multi-Config"
         build_type:
