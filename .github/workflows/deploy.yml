@@ -10,7 +10,7 @@ jobs:
   
     runs-on: ${{ matrix.os }}    
     steps:    
-      - run: ls
+      - run: .github/scripts/deploy-all.sh 
 
     strategy:
       fail-fast: false
