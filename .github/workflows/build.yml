@@ -6,12 +6,14 @@ on:
   workflow_dispatch:   # workflow can be run manually from the actions tab
 
 env:
+  PROJECT_BUILD_HOME: "{{ github.workspace }}/cmake-out"
+  PROJECT_DEPLOY_HOME: "{{ github.workspace }}/.github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}"
   # Conan cache environment variables
   CONAN_SYSREQUIRES_MODE: enabled
   CONAN_USER_HOME: "${{ github.workspace }}/conan-cache"
   CONAN_USER_HOME_SHORT: "${{ github.workspace }}/conan-cache/short"
   CLANG_TIDY_VERSION: "15.0.6"
-  
+
 jobs:    
 
   ci:  
@@ -59,6 +61,9 @@ jobs:
           
       - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
+      
+      - run: mkdir -p .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
+      - run: cp ~/cmake_out/cocor/cocor .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
 
     strategy:
 
