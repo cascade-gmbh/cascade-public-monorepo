@@ -10,7 +10,7 @@ env:
   CONAN_USER_HOME: "${{ github.workspace }}/conan-cache"
   CONAN_USER_HOME_SHORT: "${{ github.workspace }}/conan-cache/short"
   CLANG_TIDY_VERSION: "15.0.6"
-  
+   
 jobs:    
 
   ci:  
