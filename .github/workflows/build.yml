@@ -1,3 +1,4 @@
+
 name: build
 
 on:
@@ -10,7 +11,7 @@ env:
   CONAN_USER_HOME: "${{ github.workspace }}/conan-cache"
   CONAN_USER_HOME_SHORT: "${{ github.workspace }}/conan-cache/short"
   CLANG_TIDY_VERSION: "15.0.6"
-   
+  
 jobs:    
 
   ci:  
@@ -42,7 +43,6 @@ jobs:
           key: ${{ runner.os }}-${{ matrix.compiler }}-${{ matrix.build_type }}-${{ hashFiles('./conanfile.txt')}}-${{ matrix.generator }}-${{ matrix.developer_mode }}-${{ hashFiles('**/CMakeLists.txt') }}-${{ hashFiles('./vcpkg.json')}}
           restore-keys: |
             ${{ runner.os }}-${{ matrix.compiler }}-${{ matrix.build_type }}-${{ hashFiles('./conanfile.txt') }}
-
       - name: Setup Cpp
         uses: aminya/setup-cpp@v1
         with:
@@ -59,22 +59,6 @@ jobs:
           
       - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
-      
-      - run: mkdir -p .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
-      - run: cp ~/cmake_out/cocor/cocor .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: .github/pages/
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1  
-      
-      
-      
 
     strategy:
 
@@ -115,10 +99,23 @@ jobs:
             generator: "Visual Studio 17 2022"
             build_type: Debug
             developer_mode: ON
-        
-          
-          
-          
+
+
+
+      #- run: mkdir -p .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
+      #- run: cp ~/cmake_out/cocor/cocor .github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}/cocor.exe
+      
+      #- name: Setup Pages
+      #  uses: actions/configure-pages@v2
+      #- name: Build with Jekyll
+      #  uses: actions/jekyll-build-pages@v1
+      #  with:
+      #    source: .github/pages/
+      #    destination: ./_site
+      #- name: Upload artifact
+      #  uses: actions/upload-pages-artifact@v1  
+      
+
           
           
           
