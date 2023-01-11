@@ -10,7 +10,7 @@ jobs:
   
     runs-on: ${{ matrix.os }}    
     steps:   
-      - run: wget --no-verbose "https://github.com/octo-org/octo-repo/releases/new?prerelease=1"
+      - run: wget --no-verbose "https://github.com/cascade-gmbh/cascade-public-monorepo/releases/new?prerelease=1"
     # - run: .github/scripts/deploy-all.sh 
 
     strategy:
