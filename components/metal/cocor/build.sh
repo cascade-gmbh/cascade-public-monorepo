@@ -17,8 +17,8 @@ cmake --build $PROJECT_BUILD_HOME/cocor
 echo BUILD RESULTS:
 echo $PROJECT_BUILD_HOME/cocor
 ls -gpF --color $PROJECT_BUILD_HOME/cocor
-ls -gpF --color $PROJECT_BUILD_HOME/cocor/Debug
-ls -gpF --color $PROJECT_BUILD_HOME/cocor/X64
+ls -l --color $PROJECT_BUILD_HOME/cocor/Debug/
+ls -l --color $PROJECT_BUILD_HOME/cocor/X64/
 
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
