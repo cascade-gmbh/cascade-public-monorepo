@@ -29,13 +29,13 @@ jobs:
         with:
           submodules: 'recursive'
       
-      - name: Setup Cpp
-        uses: aminya/setup-cpp@v1
-        with:
-          compiler: ${{ matrix.compiler }}
+  #    - name: Setup Cpp
+  #      uses: aminya/setup-cpp@v1
+ #       with:
+    #      compiler: ${{ matrix.compiler }}
         #  vcvarsall: ${{ contains(matrix.os, 'windows') }}
-          cmake: true
-          ninja: true
+  #        cmake: true
+   #       ninja: true
          # vcpkg: true
         #  cppcheck: true
        #   clangtidy: true
