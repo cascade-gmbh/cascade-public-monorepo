@@ -44,7 +44,10 @@ jobs:
       #    graphviz: true
           
     #  - run: .github/scripts/install-all.sh 
-      - run: .github/scripts/build-all.sh 
+      - run: |
+          echo ENTER SCRIPTS
+          .github/scripts/build-all.sh 
+          ECHO EXIT SCRIPTS
 
     strategy:
 
