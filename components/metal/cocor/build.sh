@@ -23,6 +23,8 @@ echo yyy
 ls -l --color $PROJECT_BUILD_HOME/cocor/X64/
 echo zzzz
 ls -l --color $PROJECT_BUILD_HOME/cocor/cocor.dir/
+echo fffff
+ls -l --color $PROJECT_BUILD_HOME/cocor/cocor.dir/Debug/
 echo aaaa
 ls -l --color $PROJECT_BUILD_HOME/cocor/CMakeFiles/
 
