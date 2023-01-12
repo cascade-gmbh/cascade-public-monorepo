@@ -20,6 +20,11 @@ jobs:
       PROJECT_BUILD_HOME: "${{ github.workspace }}/cmake_out"
       PROJECT_DEPLOY_HOME: "${{ github.workspace }}/.github/pages/${{ matrix.build_type }}/${{ matrix.os }}/${{ matrix.arch }}/${{ matrix.compiler }}"
  
+    defaults:
+      run:
+        shell: bash
+        # working-directory: scripts
+ 
     steps:    
    
       #- run: echo PROJECT_BUILD_HOME $PROJECT_BUILD_HOME
