@@ -43,7 +43,7 @@ jobs:
           doxygen: true
           graphviz: true
           
-      - run: .github/scripts/install-all.sh 
+    #  - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
 
     strategy:
@@ -54,7 +54,7 @@ jobs:
         os:
           - ubuntu-22.04
           - windows-2022
-          - macos-12
+        #  - macos-12
         arch:
           - X64
          # - ARM64
