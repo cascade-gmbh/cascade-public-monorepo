@@ -34,25 +34,22 @@ jobs:
         with:
           submodules: 'recursive'
       
-  #    - name: Setup Cpp
-  #      uses: aminya/setup-cpp@v1
- #       with:
-    #      compiler: ${{ matrix.compiler }}
-        #  vcvarsall: ${{ contains(matrix.os, 'windows') }}
-  #        cmake: true
-   #       ninja: true
-         # vcpkg: true
-        #  cppcheck: true
-       #   clangtidy: true
-        #  clangformat: true
-      #    doxygen: true
-      #    graphviz: true
+      - name: Setup Cpp
+        uses: aminya/setup-cpp@v1
+        with:
+          compiler: ${{ matrix.compiler }}
+          vcvarsall: ${{ contains(matrix.os, 'windows') }}
+          cmake: true
+          ninja: true
+          vcpkg: true
+          cppcheck: true
+          clangtidy: true
+          clangformat: true
+          doxygen: true
+          graphviz: true
           
     #  - run: .github/scripts/install-all.sh 
-      - run: |
-          echo ENTER SCRIPTS
-          .github/scripts/build-all.sh 
-          echo EXIT SCRIPTS
+      - run: .github/scripts/build-all.sh 
 
     strategy:
 
@@ -62,12 +59,12 @@ jobs:
         os:
           - ubuntu-22.04
           - windows-2022
-        #  - macos-12
+          - macos-12
         arch:
           - X64
-         # - ARM64
+          - ARM64
         compiler:
-         # - llvm
+          - llvm
           - gcc
         generator:
           - "Ninja Multi-Config"
