@@ -27,6 +27,12 @@ echo fffff
 ls -l --color $PROJECT_BUILD_HOME/cocor/cocor.dir/Debug/
 echo aaaa
 ls -l --color $PROJECT_BUILD_HOME/cocor/CMakeFiles/
+echo current dir
+ls -l
+echo CocoR-CPP
+ls -l CocoR-CPP
+
+
 
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
