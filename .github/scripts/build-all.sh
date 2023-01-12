@@ -6,7 +6,7 @@ cd $(dirname $0)
 echo ------------------------------------------------------- BUILD-ALL
 
 # build Coco/R executable:
-../../components/metal/cocor/build.sh
+#../../components/metal/cocor/build.sh
 
 echo ------------------------------------------------------- BUILD-ALL END
 
