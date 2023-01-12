@@ -47,7 +47,7 @@ jobs:
       - run: |
           echo ENTER SCRIPTS
           .github/scripts/build-all.sh 
-          ECHO EXIT SCRIPTS
+          echo EXIT SCRIPTS
 
     strategy:
 
