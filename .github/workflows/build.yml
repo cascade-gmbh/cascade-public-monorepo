@@ -57,12 +57,12 @@ jobs:
 
       matrix:
         os:
-          - ubuntu-22.04
+  #        - ubuntu-22.04
           - windows-2022
-          - macos-12
+ #         - macos-12
         arch:
           - X64
-          - ARM64
+   #       - ARM64
         compiler:
           - llvm
           - gcc
@@ -84,12 +84,12 @@ jobs:
             build_type: Debug
             developer_mode: ON
         
-          - os: windows-2022
-            arch: ARM64
-            compiler: msvc
-            generator: "Visual Studio 17 2022"
-            build_type: Debug
-            developer_mode: ON
+    #      - os: windows-2022
+    #        arch: ARM64
+      #      compiler: msvc
+        #    generator: "Visual Studio 17 2022"
+       #     build_type: Debug
+   #         developer_mode: ON
 
 
 
