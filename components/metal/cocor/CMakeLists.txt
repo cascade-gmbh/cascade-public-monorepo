@@ -41,7 +41,7 @@ add_executable(
     CocoR-CPP/src/Position.cpp
     CocoR-CPP/src/Position.h
     CocoR-CPP/src/Scanner.cpp
-    CocoR-CPP/src/Scanner.h
+    Scanner.h
     CocoR-CPP/src/Sets.h
     CocoR-CPP/src/SortedList.cpp
     CocoR-CPP/src/SortedList.h
