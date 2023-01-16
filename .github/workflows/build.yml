@@ -40,13 +40,13 @@ jobs:
           compiler: ${{ matrix.compiler }}
           vcvarsall: ${{ contains(matrix.os, 'windows') }}
           cmake: true
-          ninja: true
-          vcpkg: true
-          cppcheck: true
-          clangtidy: true
-          clangformat: true
-          doxygen: true
-          graphviz: true
+          ninja: false # true
+          vcpkg: false # true
+          cppcheck: false # true
+          clangtidy: false # true
+          clangformat: false # true
+          doxygen: false # true
+          graphviz: false # true
           
     #  - run: .github/scripts/install-all.sh 
       - run: .github/scripts/build-all.sh 
