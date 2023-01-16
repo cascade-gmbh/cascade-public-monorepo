@@ -13,6 +13,10 @@ echo BUILD-COCOR:
 cmake ./ -B $PROJECT_BUILD_HOME/cocor
 cmake --build $PROJECT_BUILD_HOME/cocor
 
+# show current directory
+echo CURRENT DIR:
+ls -gpF --color .
+
 # show resulting build directory
 echo BUILD RESULTS:
 echo $PROJECT_BUILD_HOME/cocor
