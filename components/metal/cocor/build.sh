@@ -17,11 +17,6 @@ cmake --build $PROJECT_BUILD_HOME/cocor
 echo CURRENT DIR:
 ls -gpF --color .
 
-# show resulting build directory
-echo BUILD RESULTS:
-echo $PROJECT_BUILD_HOME/cocor
-ls -gpFR --color $PROJECT_BUILD_HOME/cocor
-
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
 $PROJECT_BUILD_HOME/cocor/cocor
