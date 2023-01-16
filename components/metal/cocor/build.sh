@@ -20,8 +20,7 @@ ls -gpF --color .
 # show resulting build directory
 echo BUILD RESULTS:
 echo $PROJECT_BUILD_HOME/cocor
-ls -gpF --color $PROJECT_BUILD_HOME/cocor
-tree $PROJECT_BUILD_HOME/cocor
+ls -gpFR --color $PROJECT_BUILD_HOME/cocor
 
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
