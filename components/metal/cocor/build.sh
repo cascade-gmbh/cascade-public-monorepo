@@ -17,34 +17,18 @@ cmake --build $PROJECT_BUILD_HOME/cocor
 echo BUILD RESULTS:
 echo $PROJECT_BUILD_HOME/cocor
 ls -gpF --color $PROJECT_BUILD_HOME/cocor
-echo xxx
-ls -l --color $PROJECT_BUILD_HOME/cocor/Debug/
-echo yyy
-ls -l --color $PROJECT_BUILD_HOME/cocor/X64/
-echo zzzz
-ls -l --color $PROJECT_BUILD_HOME/cocor/cocor.dir/
-echo fffff
-ls -l --color $PROJECT_BUILD_HOME/cocor/cocor.dir/Debug/
-echo aaaa
-ls -l --color $PROJECT_BUILD_HOME/cocor/CMakeFiles/
-echo current dir
-ls -l
-echo CocoR-CPP
-ls -l CocoR-CPP
-
-
+tree $PROJECT_BUILD_HOME/cocor
 
 # simple test
 echo COCOR TEST-CALL WITHOUT PARAMETERS:
 $PROJECT_BUILD_HOME/cocor/cocor
 
-
-#if [ -f "$PROJECT_BUILD_HOME/cocor/cocor
-#then
- #  $PROJECT_BUILD_HOME/cocor/cocor
-#else
-   #$PROJECT_BUILD_HOME/cocor/cocor.exe
-#fi
+# if [ -f "$PROJECT_BUILD_HOME/cocor/cocor
+# then
+#   $PROJECT_BUILD_HOME/cocor/cocor
+# else
+#   $PROJECT_BUILD_HOME/cocor/cocor.exe
+# fi
  
 
 
