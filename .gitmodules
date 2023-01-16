@@ -1,0 +1,3 @@
+[submodule "components/metal/cocor"]
+	path = components/metal/cocor
+	url = ../cocor.git
