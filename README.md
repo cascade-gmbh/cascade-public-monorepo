@@ -6,8 +6,6 @@
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/doc.yml/badge.svg)](.github/workflows/doc.yml)
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
 
-_Disclaimer: This is work in progress, I will move our internal projects one by one to this repo, but it will take time. The following is the description of the target state, completed ports will be indicated with a flag:_
-
 Open source software components based on [C++23](https://en.cppreference.com/w/cpp/compiler_support/23) and embedded Python packages.
 
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
@@ -52,6 +50,8 @@ Tools:
 This repo is also intended to be used as template/example for complex CI/CD projects.
 
 ---
+
+_Disclaimer: This is work in progress, I will move our internal projects one by one to this repo, but it will take time as they have to be heavily restructured. The following is the description of the target state, completed projects will be indicated with a flag:_
 
 [**Cascade::Metal**](components/metal) - Compiler generator library for domain specific languages (DSL) using attributed grammars directly in C++23 sourcecode. Dependencies: C++23, [Cascade Coco/R](https://github.com/cascade-gmbh/cocor) (executables).
 
