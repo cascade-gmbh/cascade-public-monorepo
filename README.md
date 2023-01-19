@@ -6,7 +6,7 @@
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/doc.yml/badge.svg)](.github/workflows/doc.yml)
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
 
-Open source software components based on [C++23](https://en.cppreference.com/w/cpp/compiler_support/23) and embedded Python packages.
+Free open source software components based on [C++23](https://en.cppreference.com/w/cpp/compiler_support/23) and embedded Python packages.
 
 - Windows, Ubuntu, macOS, iOS, Android, WebAssembly 
 - GCC, Clang, MSVC
