@@ -1,10 +1,12 @@
-# Cascade Public Monorepo - not yet released!
+# Cascade Public Monorepo _!not yet released!_
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/build.yml/badge.svg)](.github/workflows/build.yml)
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/test.yml/badge.svg)](.github/workflows/test.yml)
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/doc.yml/badge.svg)](.github/workflows/doc.yml)
 [![](https://github.com/cascade-gmbh/cascade-public-monorepo/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
+
+_Disclaimer: This is work in progress, I will move our internal projects one by one to this repo, but it will take time. The following is the description of the target state, completed ports will be indicated with a flag:_
 
 Open source software components based on [C++23](https://en.cppreference.com/w/cpp/compiler_support/23) and embedded Python packages.
 
